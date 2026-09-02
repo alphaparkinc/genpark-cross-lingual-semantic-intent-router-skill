@@ -1,0 +1,39 @@
+{
+  "name": "genpark-cross-lingual-semantic-intent-router-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Cross-lingual semantic intent router detecting multilingual queries and routing to specialized agent sub-queues.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "nlp-routing",
+  "tags": [
+    "cross-lingual",
+    "intent-router",
+    "polyglot-ai",
+    "multilingual-nlp",
+    "agent-dispatch"
+  ],
+  "inputs": {
+    "raw_multilingual_text": {
+      "type": "string"
+    },
+    "supported_target_intents": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "intent_routing_id": {
+      "type": "string"
+    },
+    "detected_source_language_iso": {
+      "type": "string"
+    },
+    "predicted_canonical_intent": {
+      "type": "string"
+    },
+    "routing_decision_telemetry_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
